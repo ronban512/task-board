@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Solitreo&display=swap');
+h1 {
+    font-family: 'Solitreo', cursive;
+}
+
+.board-background {
+    background-image: url(/images/tile.jpg)
+}
+
+.form-background {
+    background-image: url(/images/formbg.jpg);
+    
+    
+}
+
+.note-background {
+    background-image: url(/images/notebg.png);
+    height: 250px;
+    width: 200px;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: start;
+    padding: 36px 30px 10px 10px;
+    position: relative;
+}
+
+.fadein-animate {
+    opacity: 1;
+	animation-name: fadeIn;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.task-wroten {
+    overflow-y: auto;
+    word-break: break-word;
+    font-family: 'Solitreo', cursive;
+    color: blue;
+}
+
+input[type=text] {
+    margin-left: 80px;
+    margin-top: 18px;
+}
+
+input[type=date], input[type=time],input[type=submit], input[type=reset] {
+    margin-left: 80px;
+    font-family: 'Solitreo', cursive;
+    color: blue;
+}
+
+.delete-note {
+    width: fit-content;
+    position: absolute;
+    right: 31px;
+    top: 21px;
+    font-size: 12px;
+    background: transparent;
+    border: none;
+    display: none;
+    padding: 0;
+}
+
+.note-background:hover > .delete-note {
+    display: block;
+}
+
+.button:hover {
+    position: relative;
+    bottom: 1px;
+}
+
+.button:active {
+	position:relative;
+    top: 1px;
+	
+}
+
+
+#taskDetails {
+    color: blue;
+    font-family: 'Solitreo', cursive;
+}
+
+::placeholder {
+    color: blue;
+}
+
+.date-time {
+    color: blue;
+    font-family: 'Solitreo', cursive;
+}
